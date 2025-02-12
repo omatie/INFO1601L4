@@ -6,10 +6,53 @@
 	<title>Document</title>
 </head>
 <style>
+	*{
+		box-sizing:border-box;
+	}
 
+h1::first-letter{
+	color:blue;
+	font-size: 50px;
+}
+h1{
+	position:relative;
+	top:1px;
+	left:5px;
+	background-color:green;
+	z-index:2;
+}
+span{
+	position:absolute;
+	top:50px;
+	left:5px;
+	background-color:red;
+	z-index:1;
+}
+p{
+	position:fixed;
+	top:30px;
+	left:5px;
+	background-color:yellow;
+	z-index:1;
+}
+body{
+	height:100vh;
+}
+body{
+	display:flex;
+	}
 </style>
 <body>
 
+<h1>
+	Welcome
+</h1>
+<span>Loren</span>
+	
+
+	<p>
+		Some text
+	</p>
 
 
 	
